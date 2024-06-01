@@ -13,7 +13,10 @@ namespace the_basics_Сsharp
             //Constant and variables
             const string MyName = "Jack";
             string MyMidleName;
-            
+            int age = 27;
+            bool pet = true;
+            double size = 37.5;
+
             MyMidleName = "Dolan";
 
             Console.Write($"{MyName} \n");
@@ -38,6 +41,13 @@ namespace the_basics_Сsharp
 
             Console.WriteLine(true);
             Console.WriteLine(false);
+
+            //Task in Modul two
+
+            Console.WriteLine($"My name is {MyName}");
+            Console.WriteLine($"My age is {age}");
+            Console.WriteLine($"Du i have a pet ? {pet}");
+            Console.WriteLine($"My shoe size is {size}");
 
             Console.ReadKey();
         }
