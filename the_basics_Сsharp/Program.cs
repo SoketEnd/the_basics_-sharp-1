@@ -49,7 +49,56 @@ namespace the_basics_Сsharp
             Console.WriteLine($"Du i have a pet ? {pet}");
             Console.WriteLine($"My shoe size is {size}");
 
+            //Task in Modul 3
+
+            DayOfWeek MyfavitDay;
+            MyfavitDay = DayOfWeek.Friday;
+            Console.WriteLine(MyfavitDay);
+
+            //Task 4
+
+            colorTrafficLight Color;
+            Color = colorTrafficLight.Green;
+            Console.WriteLine(Color);
+
+            //Tasl 5
+
+            double result = 5 / 2 * 3;
+            Console.WriteLine(result);
+
+            //task 6 Анкета 
+
+            (string name, int age, string bursday)User;
+
+            Console.WriteLine("Введите ваше Имя: ");
+            User.name = Console.ReadLine();
+            Console.WriteLine("Введите ваш возрост: ");
+            User.age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите вашу дату рождения: ");
+            User.bursday = Console.ReadLine();
+
+            Console.WriteLine($"Здравствуйте {User.name}");
+            Console.WriteLine($"Ваш возрост {User.age}");
+            Console.WriteLine($"Дата вашего рождения {User.bursday}");
+
             Console.ReadKey();
         }
     }
+}
+enum DaysOfWeek : byte
+{
+    Monday = 1,
+    Tuesday,
+    Wednesday,
+    Trusday,
+    Friday,
+    Saturday,
+    Sunday
+}
+
+enum colorTrafficLight: int
+{
+    Red = 100,
+    Yellow = 200,
+    Green = 300
 }
